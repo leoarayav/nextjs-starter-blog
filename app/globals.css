@@ -25,3 +25,36 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+::selection {
+  background-color: #797a7a;
+  color: #fefefe;
+}
+
+html {
+  min-width: 360px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #4e4d4d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #707070;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #161616;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold mt-0;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-neutral-700 pl-4 not-italic;
+}
